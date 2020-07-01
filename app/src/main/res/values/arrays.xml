@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type">
+        <item>Ev Tipi Seçiniz</item>
+        <item>Oda</item>
+        <item>Ev</item>
+    </string-array>
+    <string-array name="priceType">
+        <item>Ödeme Tipi Seçiniz</item>
+        <item>Günlük</item>
+        <item>Aylık</item>
+    </string-array>
+
+</resources>

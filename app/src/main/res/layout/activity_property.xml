@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.PropertyAddActivity">
+
+
+    <EditText
+        android:id="@+id/txtOtherFeatures"
+        android:layout_width="278dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="100dp"
+        android:ems="10"
+        android:hint="Açıklama Giriniz"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddress2" />
+
+    <EditText
+        android:id="@+id/txtAddress2"
+        android:layout_width="278dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Adres Giriniz"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtOtherFeatures"
+        app:layout_constraintEnd_toEndOf="@+id/txtOtherFeatures"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtOtherFeatures"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCountry" />
+
+    <Spinner
+        android:id="@+id/spinnerPriceType"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:entries="@array/priceType"
+        app:layout_constraintBottom_toTopOf="@+id/txtPrice"
+        app:layout_constraintEnd_toEndOf="@+id/txtPrice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtPrice"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerType" />
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="272dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="5dp"
+        android:autofillHints="dasdadasdsa"
+        android:entries="@array/type"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerPriceType"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerPriceType"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/spinnerPriceType"
+        app:layout_constraintTop_toBottomOf="@+id/txtTittle" />
+
+    <Spinner
+        android:id="@+id/spinnerCountry"
+        android:layout_width="274dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtAddress2"
+        app:layout_constraintEnd_toEndOf="@+id/txtAddress2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtAddress2"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCity" />
+
+    <EditText
+        android:id="@+id/txtNumberRoom"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Oda Sayısı Giriniz"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtNumberFloor"
+        app:layout_constraintEnd_toEndOf="@+id/txtNumberFloor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtNumberFloor"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrice" />
+
+    <EditText
+        android:id="@+id/txtPrice"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Ücret"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtNumberRoom"
+        app:layout_constraintEnd_toEndOf="@+id/txtNumberRoom"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="@+id/txtNumberRoom"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPriceType" />
+
+    <Spinner
+        android:id="@+id/spinnerCity"
+        android:layout_width="274dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCountry"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerCountry"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinnerCountry"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumberFloor" />
+
+    <EditText
+        android:id="@+id/txtNumberFloor"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Kat Sayısını Giriniz"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCity"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerCity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinnerCity"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumberRoom" />
+
+    <EditText
+        android:id="@+id/txtTittle"
+        android:layout_width="271dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:hint="İlan Başlığı"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerType"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerType"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinnerType"
+        app:layout_constraintTop_toBottomOf="@+id/imgProperty"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <ImageView
+        android:id="@+id/imgProperty"
+        android:layout_width="136dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/btnAddProperty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOtherFeatures" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
