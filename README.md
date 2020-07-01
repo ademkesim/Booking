@@ -1,1 +1,2 @@
-# Booking
+# Otel Rezervasyon Admin Paneli
+
